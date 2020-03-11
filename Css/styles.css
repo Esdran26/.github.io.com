@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+.divForm {
+    position: relative;
+    align-self: center;
+}
+.loginCenter {
+    display: grid;
+    align-self: center;
+    justify-content: center;
+}
+.divForm h1 {
+    margin: 8px 0;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    color: rgb(204, 25, 212); /*c3a2d8*/
+    font-size: 2.5rem;
+}
+.iconLogo {
+    margin-bottom: 5rem;
+    margin-right: 2rem;
+    text-align: right;
+}
+.footerForm {
+    margin-top: 5rem;
+    margin-right: 2rem;
+}
+.iconLogo i {
+    color: rgb(170, 170, 170);
+}
+.textForm {
+    margin-top: 1rem;
+}
+input {
+    font-size: .9rem;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid rgb(221, 221, 221);
+    transition: all .5s ease-in-out;
+    outline: none;
+    border-radius: .3rem;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 0px 8px 15px rgb(221, 221, 221);
+}
+.inputPassword, .inputUser {
+    position: relative;
+}
+.fa-eye-slash, .fa-user {
+    position: absolute;
+    cursor: pointer;
+    top: 50px;
+    right: 12px;
+    color: white;
+}
+.fa-eye {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top: 50px;
+    right: 13px;
+    color: white;
+}
+/*input[type="text"]:focus, input[type="password"]:focus  {
+    border: 3px solid rgb(224, 78, 221);
+}*/
+input[type="submit"] {
+    padding: 8px 40px;
+    margin-top: 1rem;
+    border: 3px solid rgb(224, 78, 221);
+    cursor: pointer;
+    background-color: rgb(224, 78, 221);
+    font-weight: bold;
+    color: white;
+    border-radius: .3rem;
+    box-shadow: 0px 8px 15px rgb(224, 78, 221);
+    transition: all .3s ease-in-out;
+}
+input[type="submit"]:hover {
+    transform: translateY(-5px);
+    background-color: rgb(224, 78, 221);
+}
+a[class="linkRegister"] {
+    color: rgba(9, 132, 227,1.0);
+}
+.textForm {
+    max-width: 400px;
+}
+#smallVerifyUser {
+    text-align: right;
+}
+#smallVerifyUser a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.divBackground {
+    background-image: url(../Img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footerForm {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    justify-content: flex-end;
+}
+.linkSignUp a {
+    margin-left: 1rem;
+    text-decoration: none;
+    border: 1px solid rgb(170, 170, 170);
+    padding: 5px 20px;
+    color: rgb(170, 170, 170);
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+}
+.linkSignUp a:hover {
+    border: 1px solid rgb(224, 78, 221);
+    color: rgb(224, 78, 221);
+}
+input[type=checkbox].css-checkbox {
+    position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left:26px;
+    height:21px; 
+    display:inline-block;
+    line-height:21px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:21px;
+    vertical-align:middle;
+    cursor:pointer;
+
+}
+label {
+    font-size: 1.3rem;
+}
+@media (max-width: 950px) {
+    .divBackground {
+        display: none;
+    }
+    .container {
+        grid-template-columns: .5fr 3fr .5fr;
+    }
+    .divForm {
+        grid-column: 2 / 3;
+    }
+}
+@media (max-width: 530px) {
+    .container {
+        grid-template-columns: .1fr 1fr .1fr;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+}
+@media (max-width: 425px) {
+    .iconLogo, .footerForm {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/de6467cf36.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="divBackground">
+
+        </div>
+        
+        <div class="divForm">
+            <div class="iconLogo">
+                <i class="fab fa-slack fa-3x fa-lg"></i>
+            </div>
+            <div class="loginCenter">
+                <h1>Get Started!</h1>
+                <div class="textForm">
+                    <form method="POST" action="dayana/index.html">
+                        <div class="inputUser">
+                            <label id="labelUser" for="inputUser">Username </label>
+                            <input type="text" name="usUser" id="inputUser" autofocus placeholder="Enter your user name or email" autocomplete="off">
+                            <i class="fas fa-user fa-1.5x fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <br>
+                        <div class="inputPassword">
+                            <label for="inputPassword">Password </label>
+                            <input type="password" name="usPassword" id="inputPassword" placeholder="Enter your password">
+                            <i id="eye-slash" class="far fa-eye-slash fa-1.5x fa-lg" aria-hidden="true"></i>
+                            <i id="eye" class="far fa-eye fa-1.5x fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div id="smallVerifyUser">
+                            <a href="https://undraw.co/illustrations"><small>Forgot your password?</small></a>
+                        </div><br>
+                        <div class="rememberMe">
+                            <input type="checkbox" name="usCheck" id="usCheck">
+                            <label for="usCheck" class="css-label"><small>Remember me</small></label>
+                        </div>
+                        <div class="linkSubmit">
+                            <input type="submit" id="inputSubmit" value="Login">
+                        </div>
+                        <br><br>
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="footerForm">
+                <div class="textHaveAccount">
+                    <p>
+                        <small>Don't have an account?</small> 
+                    </p>
+                </div>
+                <div class="linkSignUp">
+                    <a href="https://undraw.co/illustrations">
+                        <small>Sign up</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Js/App.js"></script>
+</body>
+</html>
